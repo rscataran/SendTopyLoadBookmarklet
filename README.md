@@ -12,7 +12,7 @@ How to Install and Use:
 1. On your Browser, create a new bookmark
 2. For Firefox:
 - Name: Send To pyLoad
-- Location: Paste the javascript code of the bookmarklet
+- Location: Paste the javascript code of the bookmarklet.js
 
 3. Navigate to the page where the download link is located.
 4. Click the Bookmarklet you created
@@ -20,4 +20,5 @@ How to Install and Use:
 6. Check the link(s) to send to pyLoad for downloading
 
 Note:
-pyLoad users must be logged in the pyLoad webinterface for this bookmarklet to work
+- pyLoad users must be logged in the pyLoad webinterface for this bookmarklet to work
+- If you have a different address/port for your pyLoad, change the value of urlx on line 158 to your pyLoad setup.
