@@ -157,7 +157,7 @@ function toPyload(){
   jLinks=JSON.stringify(list_Pyload);
   urlx='http://localhost:8000/api/addPackage?name="'+pn+'"&links='+jLinks;
   winz=window.open(urlx,"","resizable=no, location=no, width=100, height=100, menubar=no, status=no, scrollbars=no, menubar=no");
-
+  setTimeout("winz.close()",1000);
   win.close()
 }
 winx=window;
