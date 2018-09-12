@@ -140,7 +140,7 @@ function createListLinks(){
   return list_Links
 }
 function toPyload(){
-  var pn=encodeURIComponent(win.document.getElementById("packagename").value);
+  var pn=encodeURIComponent('"'+win.document.getElementById("packagename").value+'"');
   list_Pyload=[];
   var e=win.document.getElementsByName("checkboxUrl")[0];
   e.checked?list_Pyload.push(e.id):"";
@@ -155,7 +155,7 @@ function toPyload(){
     return fals
   }
   jLinks=encodeURIComponent(JSON.stringify(list_Pyload));
-  urlx='http://localhost:8000/api/addPackage?name=%22'+pn+'%22&links='+jLinks;
+  urlx='http://172.16.4.210:8083/api/addPackage?name=' + pn + '&links=' + jLinks;
   winz=window.open(urlx,"","resizable=no, location=no, width=100, height=100, menubar=no, status=no, scrollbars=no, menubar=no");
   setTimeout("winz.close()",3);
   win.close()
