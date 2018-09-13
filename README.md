@@ -6,7 +6,7 @@ The original bookmarklet from http://peacecopathe.free.fr/peacecoFile/upload/pyl
 Changes made:
 - Translated to English
 - Added Package Name field
-- Shorter Timeout to close dialog
+- Longer timeout to close dialog
 
 How to Install and Use:
 1. On your Browser, create a new bookmark
